@@ -6,12 +6,12 @@ public abstract class SavingAcc extends BankAcc {
 	
 	
 	
-	public SavingAcc(int AccNo,String accNm,float accBal,float creditLimit) {
+	public SavingAcc(int AccNo,String accNm,float accBal,float creditLimit, boolean isSalary) {
 		super(AccNo, accNm, creditLimit);
 		this.isSalary = isSalary;
 	}
 
-	public SavingAcc(int accNo, String accNm, float accBal, boolean isSalaray) {
+	public SavingAcc(int accNo, String accNm, float accBal, boolean isSalaray, boolean isSalary) {
 		super(accNo, accNm, accBal);
 		this.isSalary = isSalary;
 	}
